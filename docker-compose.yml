@@ -1,0 +1,13 @@
+version: '3.6'
+
+services:
+  alpine-nginx-aarch64:
+    build: .
+    image: hackinglab/alpine-nginx-aarch64:3.2
+    environment:
+    - AUTHOR=e1
+    - HL_USER_USERNAME=hacker
+    ports:
+      - 80:80
+
+
